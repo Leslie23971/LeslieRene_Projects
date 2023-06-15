@@ -1,0 +1,318 @@
+/* 
+TAILWINDCSS
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+style
+*/
+
+/* FONTS */
+
+/* MEDIA QUERIES*/ /* is this correct*/
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap*/
+@media (max-width: 375px) {
+  .intro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: x-small;
+    white-space:normal
+  }
+  .content-1 , .content-2 , .content-3 , .content-4 {
+    margin: auto;
+  }
+  .bold-words {
+    font-size: small;
+    font-weight: normal;
+    white-space:normal
+  }
+  .resume-dwnld-btn {
+    font-size: x-small;
+  }
+  .copyrighting {
+    font-size: xx-small;
+  }
+}
+@media (min-width: 376px) {
+  .intro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+    white-space:normal
+  }
+  .content-1 , .content-2 , .content-3 , .content-4 {
+    margin: auto;
+  }
+  .bold-words {
+    font-size: small;
+    font-weight: normal;
+  }
+  .copyrighting {
+    font-size: xx-small;
+  }
+}
+
+@media (min-width: 525px) {
+  .intro-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: small;
+  }
+  .content-1 , .content-2 , .content-3 , .content-4 {
+    margin: auto;
+  }
+  .bold-words {
+    font-size: x-large;
+  }
+  .copyrighting {
+    font-size: medium;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .intro-block {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: medium;
+    }
+    .content-1 , .content-2 , .content-3 , .content-4 {
+        margin: auto;
+    }
+    /*.bold-words {
+        font-size: x-large;
+    } */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .default-layout-header {
+        height: 200px;
+    }
+    .intro-block {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+        grid-template-columns: 130px 130px 130px 130px;
+        row-gap: 14px;
+        font-size: large;
+    }
+    .content-2 {
+        margin-left: -80px;
+    }
+    .content-3 {
+        margin-left: -50px;
+    }
+    .content-4 {
+        margin-left: -30px;
+    }
+    .content-4-fr {
+        margin-left: 40px;
+    }
+    .bold-words {
+        /* tailwind : text:2xl */
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-content {
+        margin-left: -50px;
+    }
+    .intro-block {
+        row-gap: 14px;
+        grid-template-columns: 160px 160px 160px 160px;
+        font-size: x-large;
+    }
+    .content-2 {
+        margin-left: -100px;
+    }
+    .content-3 {
+        margin-left: -5px;
+    }
+    .content-4 {
+        margin-left: 40px;
+    }
+    .content-3-fr {
+        margin-left: 15px;
+    }
+    .content-4-fr {
+        margin-left: 60px;
+    }
+    .bold-words {
+        /* tailwind : text:3xl */
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+    } 
+}
+
+/* ? devices (large desktops, 1200px and up) */
+@media all and (min-width: 1024px) {
+    .main-content {
+        margin-left: 0px;
+    }
+    .intro-block {
+        row-gap: 14px;
+        grid-template-columns: 170px 170px 170px 170px;
+        font-size: x-large;
+    }
+    .content-2 {
+        margin-left: -80px;
+    }
+    .content-3 {
+        margin-left: -50px;
+    }
+    .content-4 {
+        margin-left: auto;
+    }
+    .content-3-fr {
+        margin-left: 30px;
+    }
+    .content-4-fr {
+        margin-left: 90px;
+    }
+    .bold-words {
+        /* tailwind : text:3xl */
+        font-size: 1.875rem; /* 30px */
+        line-height: 2.25rem; /* 36px */
+    } 
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .default-layout-header {
+        height: 250px;
+    }
+    .intro-block {
+        row-gap: 14px;
+        grid-template-columns: 210px 210px 210px 210px;
+        font-size: xx-large;
+    }
+    .content-2 {
+        margin-left: -80px;
+    }
+    .content-3 {
+        margin-left: -50px;
+    }
+    .content-3-fr {
+        margin-left: 20px;
+    }
+    .content-4-fr {
+        margin-left: 100px;
+    }
+    .bold-words {
+        /* tailwind : text:4xl */
+        font-size: 2.25rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+    }   
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    
+}
+
+
+/* ALL PAGES GENERIC FORMAT*/
+html {
+    height: 100%;
+    background: rgb(236, 199, 118, 1);
+}
+
+body {
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+
+/* */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 4rem;
+}
+
+.title-anchor {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  background-color: white;
+  border-radius: 3rem;
+  width: fit-content;
+  padding: 0.5rem;
+}
+.router-link-exact-active {
+  color: rgb(236, 199, 118);
+}
+
+.intro-block {
+    white-space: nowrap;
+}
+
+.content-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.content-2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.content-3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.content-4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.content span {
+  font-style:italic;
+}
+.content span {
+  font-style:normal;
+}
+
+.resume-downloader {
+  display: block;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.resume-downloader a {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.resume-dwnld-btn {
+  color: rgb(236, 199, 118, 1);
+  background: black;
+  /* border-radius: 8px; */
+  border-radius: 0.375rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  height: 8px;
+  width: 25%;
+  font-size: x-large;
+  font-family: monospace;
+}
