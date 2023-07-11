@@ -33,10 +33,6 @@ def binarySearch(arr, left, right, target) :
     # Else :
     # if middle value is target value
     middle_index = math.floor((left + right) / 2)
-    # print("left : {}".format(left))
-    # print("right : {}".format(right))
-    # print("middle_index : {}".format(middle_index))
-    # print("arr[middle_index] : {}".format(arr[middle_index]))
 
     if arr[middle_index] == target :
         formatting_output(True, middle_index, target)
@@ -131,5 +127,4 @@ if __name__ == "__main__":
 
     binarySearch(input_data, 0, len(input_data)-1, target)
 
-    exit(0)
-    
+    exit(0)    
