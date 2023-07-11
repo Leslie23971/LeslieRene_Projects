@@ -49,9 +49,6 @@ def binarySearch(arr, left, right, target) :
 
 def formatting_output(found, index=None, target = None) :
 
-    if index is not None : print("index forwarded : {}".format(index))
-
-
     print(" ********** ********** ********** ********** **********")
 
     if found == False :
@@ -123,7 +120,7 @@ if __name__ == "__main__":
         print("ERROR : no valid target value provided !! target = {}".format(target))
         exit(1)
     
-    print("Input data length : {} - target value = {}".format(len(input_data), target))
+    # print("Input data length : {} - target value = {}".format(len(input_data), target))
 
     binarySearch(input_data, 0, len(input_data)-1, target)
 
