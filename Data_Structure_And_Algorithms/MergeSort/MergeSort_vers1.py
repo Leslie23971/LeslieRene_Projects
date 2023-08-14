@@ -102,32 +102,32 @@ def merge(array, left_index, middle_index, right_index) :
 #         
 #         exit(0)
 
-
-if __name__ == "__main__":
-
-    #input_data = [56, 204, 1, 39, 0, 56, 4, 8, 109, 5, 9, 97, 3, 2, 67]
-    input_data = [random.randint(0,999) for x in range(15)]
-    #input_data = [7]
-    #input_data = []
-
-    print("********** ********** ********** ********** **********")
+def performSort(arr) :
+    
     print("********** ****** I.N.P.U.T A.R.R.A.Y ***** **********")
-    print(input_data)
-    print("********** ********** ********** ********** **********")
+    print(arr)
 
     # This basic check is performed here in this way, for the sake of this demonstrative script
     # but same check is repeated in the actual mergeSort function as it would in a real case scenario configuration
-    if len(input_data) == 0 :
+    if len(arr) == 0 :
         print("Empty Array : nothing to be sorted !!")
         exit(0)
-    if len(input_data) == 1 :
+    if len(arr) == 1 :
         print("Array of size 1 : already sorted !!")
         exit(0)
 
-    mergeSort(input_data, 0, len(input_data)-1)
+    mergeSort(arr, 0, len(arr)-1)
 
     print("********** ***** S.O.R.T.E.D A.R.R.A.Y **** **********")
-    print(input_data)
-    print("********** ********** ********** ********** **********")
+    print(arr)
+    print("\n\n")
+
+
+if __name__ == "__main__":
+
+    performSort([56, 204, 1, 39, 0, 56, 4, 8, 109, 5, 9, 97, 3, 2, 67])
+    performSort([random.randint(0,999) for x in range(15)])
+    performSort([7])
+    performSort([])   
 
     exit(0)
